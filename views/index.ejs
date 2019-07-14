@@ -1,0 +1,38 @@
+<% include ./partials/header %>
+<form action="/send" method="POST">
+	 <div class="container">
+		<div class="row">
+		    <div class="col s12">
+		        <div class="card-width card">
+			        <div class="card-content ">
+				        <div class="row">
+						        <div class="input-field col s12">
+						        	<i class="material-icons prefix">email</i>
+						          <input id="email" name="to" type="email" class="validate">
+						          <label for="email">To Email</label>
+						        </div>
+					     </div> 
+			            <div class="row">
+						        <div class="input-field col s12">
+						        	<i class="material-icons prefix">announcement</i>
+						          <input id="input_text" name="subject" type="text" data-length="10">
+                                  <label for="input_text">Subject Of Email</label>
+						        </div>
+			            </div>
+			            <div class="row">
+					          <div class="input-field col s12">
+					          	<i class="material-icons prefix">comment</i>
+					            <textarea id="textarea2" name="body" class="materialize-textarea" data-length="200"></textarea>
+					            <label for="textarea2">Textarea</label>
+					          </div>
+				        </div>
+				            <button class="btn waves-effect waves-light" type="submit">send
+							     <i class="material-icons right">send</i>
+							</button>   
+			        </div>
+		        </div>
+		    </div>
+	    </div>
+	 </div>
+</form>
+<% include ./partials/footer %>
