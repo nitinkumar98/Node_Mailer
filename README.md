@@ -13,4 +13,4 @@ npm install
 ## Run
 
 ```bash
-node app
+node app.js
